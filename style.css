@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/* START */
+
+nav {
+    position: fixed;
+    z-index: 2;
+}
+
+
+nav ul {
+    width: 100vw;
+    height: 6vh;
+    /* background-color: #1C313C; */
+    list-style: none;
+}
+
+
+nav ul li {
+    float: left;
+    width: 25%;
+}
+
+nav ul li a {
+    display: block;
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    line-height: 6vh;
+    text-shadow: 2px 2px black;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    font-size: 26px;
+    transform: translate(30px);
+    border-bottom: 2px solid white;
+}
+
+
+i {
+    font-size: 20px;
+    margin-right: 20px;
+
+}
+
+section.photo header {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Projekt/img/auto2.jpg);
+    background-size: cover;
+}
+
+
+header button {
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+    padding: 12px 0;
+    font-size: 30px;
+    background: none;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    user-select: none;
+    transition: .4s;
+}
+
+header button:hover {
+    font-size: 35px;
+    transform: translate(30px);
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+/* AUTA */
+
+.slider {
+    position: relative;
+    /* display: block; */
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../Projekt/img/auto4.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.carousel-container {
+    position: relative;
+    width: 60vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100vw;
+    height: 500px;
+}
+
+.carousel-slide img {
+    background-size: cover;
+    transform: translateX(-10%);
+}
+
+#prevBtn {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+/* KONTAKT */
+
+.kontakt {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Projekt/img/auto.jpg);
+    background-size: cover;
+}
+
+.main_1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.main_table {
+    position: fixed;
+    width: 57%;
+    top: 14%;
+    left: 42%;
+    background-color: rgba(218, 223, 225, .5);
+}
+
+.google_maps {
+    position: fixed;
+    width: 100vh;
+    height: 100vh;
+    left: 1%;
+    top: 14%;
+}
+
+.table1 {
+    margin-top: 13%;
+    width: 42%;
+    height: 50px;
+    border-bottom: 2px solid #444;
+    margin: auto;
+}
+
+.table2 {
+    width: 42%;
+    height: 50px;
+    margin: auto;
+    border-bottom: 2px solid #444;
+}
+
+.left {
+    float: left;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.right {
+    float: right;
+    padding: 15px;
+    font-size: 16px;
+}
+
+
+/* LOGOWANIE */
+
+.log {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Projekt/img/auto3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_1 {
+    position: absolute;
+    /* background-color: rgba(218, 223, 225, 0.5); */
+    width: 85%;
+    height: 75vh;
+    top: 15%;
+    left: 6%;
+    z-index: 1;
+}
+
+.log1 {
+    width: 30%;
+    float: left;
+    padding-left: 14%;
+    padding-top: 8%;
+    font-size: 30px;
+    color: white;
+    animation: shakes 2s ease-in-out alternate infinite;
+}
+
+.reg1 {
+    width: 30%;
+    float: right;
+    margin-right: 1%;
+    padding-top: 8%;
+    font-size: 30px;
+    color: white;
+    animation: shakes 2s ease-in-out alternate infinite;
+    animation-delay: 2s;
+}
+
+@keyframes shakes {
+    0% {
+        transform: translateX(0);
+    }
+
+    90% {
+        transform: translateX(0);
+    }
+
+    91% {
+        transform: translateX(20px);
+    }
+
+    92% {
+        transform: translateX(-20px);
+    }
+
+    93% {
+        transform: translateX(20px);
+    }
+
+    94% {
+        transform: translateX(-20px);
+    }
+
+    95% {
+        transform: translateX(20px);
+    }
+
+    96% {
+        transform: translateX(-20px);
+    }
+
+    97% {
+        transform: translateX(20px);
+    }
+
+    98% {
+        transform: translateX(-20px);
+    }
+
+    99% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.login {
+    width: 40%;
+    text-align: center, justify;
+    position: fixed;
+    left: 8%;
+    top: 40%;
+}
+
+.login label {
+    font-size: 24px;
+    color: white;
+}
+
+.register {
+    width: 40%;
+    height: auto;
+    text-align: center, justify;
+    position: fixed;
+    right: 0%;
+    top: 40%;
+}
+
+.login input {
+    width: 70%;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.register input {
+    width: 70%;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
